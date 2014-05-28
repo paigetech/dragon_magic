@@ -1,3 +1,9 @@
 <div class="starter-template">
-	<p> This is the welcome page </p>
+	<%=form_tag(session_path) do %>
+		<%=label_tag :email %>
+		<%=text_field_tag :email %>
+		<%=label_tag :password %>
+		<%=label_tag :password %>
+		<%submit_tag "Log In" %>
+	<% end%>
 </div>
