@@ -1,9 +1,12 @@
 <div class="starter-template">
-	<%=form_tag(session_path) do %>
+		<h1> Welcome, <%= @current_user %> </h1>
+
+
+	<%=form_tag(sessions_path) do %>
 		<%=label_tag :email %>
 		<%=text_field_tag :email %>
 		<%=label_tag :password %>
-		<%=label_tag :password %>
-		<%submit_tag "Log In" %>
+		<%=password_field_tag :password %>
+		<%=submit_tag "Log In" %>
 	<% end%>
 </div>
