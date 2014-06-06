@@ -11,7 +11,6 @@ describe "The homepage" do
 		visit root_path
 		click_link('Sign Up')
 
-		expect(page).to have_title("Sign Up")
 		expect(current_path).to eq new_user_path
 	end
 end
