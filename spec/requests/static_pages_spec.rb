@@ -7,7 +7,7 @@ describe "StaticPages" do
 
   		click_link("Sign Up")
 
-  		expect(page).to have_path(users_new_path)
+  		expect(page).to have_path(new_user_path)
   	end
   end
 
