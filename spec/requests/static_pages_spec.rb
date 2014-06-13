@@ -7,7 +7,8 @@ describe "StaticPages" do
 
   		click_link("Sign Up")
 
-  		expect(page).to have_path(new_user_path)
+                uri = URI.parse(current_url)
+                expect(uri.path).to eql new_user_path
   	end
   end
 
